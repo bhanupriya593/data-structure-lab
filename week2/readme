@@ -1,6 +1,6 @@
 C Program to Add Two Complex Numbers by Passing Structure 
  #include<stdio.h>
-             typedef struct complex
+ typedef struct complex
              {
                      int real,imag;
               }complex;
@@ -109,9 +109,9 @@ int main()
                 struct node*s;
                  s=(struct node*)malloc(sizeof(struct node));
                   s->data=100;
-                   s->prev=NULL;
-                    s->next=NULL;
-                     printf("data=%d,s->data);
+                  s->prev=NULL;
+                   s->next=NULL;
+                    printf("data=%d,s->data);
 }
 
 
