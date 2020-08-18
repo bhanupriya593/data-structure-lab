@@ -1,5 +1,6 @@
 # data-structure-lab
-1.write a C Program for Linear Search using non-recursion  #include<stdio.h>
+1.write a C Program for Linear Search using non-recursion  
+    #include<stdio.h>
      int linear_search(int n,int a[50], int key)
      {
                int i,pos=-1;
