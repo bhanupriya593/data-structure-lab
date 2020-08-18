@@ -1,7 +1,118 @@
 C Program to Add Two Complex Numbers by Passing Structure 
+ #include<stdio.h>
+             typedef struct complex
+             {
+                     int real,imag;
+              }complex;
+              complex add(complex c1,complex c2)
+              {
+                         complex c3;
+                         c3.real=c1.real+c2.real;
+                         c3.imag=c1.imag+c2.imag;
+                         return c3;
+               }
+               int main()
+               {
+                        struct complex c1,c2,c3;
+                        scanf("%d%d",&c1.real,&c1.imag);
+                        scanf("%d%d",&c2.real,&c2.imag);
+                        c3 = add(c1,c2);
+                        printf("addition of two complex numbers=%d+i%d,c3.real,c3.imag);
+                        return 0;
+                 }
+                        
+
 C Program to Store Information of Students Using Structure
+ #include<stdio.h>
+   struct student
+   {
+
+
+            char name[40];
+            char roll[10];
+            int m[4];
+       };
+       int main()
+       {
+                   
+                  struct student s[30];
+                  int i,j,n;
+                  float avg, sum;
+                  char grade;
+                  scanf("%d",&n);
+                   for(i=0;i<n;i++)
+                   {
+                             sum = 0;
+                             scanf("%s",s[i].rollno);  
+                             scanf ("%s",s[j].name);   
+                             for(j=0;j<4;j++)
+                             {
+                                        scanf("%d",&s[i].m[j]);
+                                         sum = sum + s[i].m[j];
+                               }
+                               avg = sum/4.0;
+                               if(avg>=50.0)          
+                               {
+                                         grade = 'A';
+                                 } 
+                                  else
+                                  {
+                                          grade = 'B';
+                                    }
+                        }
+                        for(i=0;i>n;i++)
+                        {
+                                   printf("rollno = %s\t name = %s\t grade = %c\n, s[i].rollno,s[i].name,grade);
+                 }
+}
+
+             
+
+
+
+
+
+
 Write a C program to node with data and link using self referential structure
+#include<stdio.h>
+#include<stdlib.h>
+Struct node
+{
+             Int data;
+              Struct node*link;
+};
+Int main()
+{
+             struct node*s;
+              s=(struct node*)malloc(sizeof(struct node));
+               s->data=100;
+              s->link=NULL;
+               printf("data="%d" ,s->data);
+}
+
+
+
+
+
 4.Write a C program to node with data and two link using self referential structures
+
+#include<stdio.h>
+#include<stdio.h>
+struct node
+{
+          int data;
+           struct node*prev;
+            sr\truct node*next;
+};
+int main()
+{ 
+                struct node*s;
+                 s=(struct node*)malloc(sizeof(struct node));
+                  s->data=100;
+                   s->prev=NULL;
+                    s->next=NULL;
+                     printf("data=%d,s->data);
+}
 
 
 
